@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="fill_horizontal"
+        >
+        <EditText
+            android:id="@+id/numberfield"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30sp"
+            android:ems="10"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:gravity="center_horizontal"
+            tools:ignore="UnusedAttribute" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="150dp">
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/keyboard_divider"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end">
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/t9_key_1"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_one"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_2"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_two"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_3"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_three"
+                android:textColor="#3889F2"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/t9_key_4"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_four"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_5"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_five"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_6"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_six"
+                android:textColor="#3889F2"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/t9_key_7"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_seven"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_8"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_eight"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_9"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_nine"
+                android:textColor="#3889F2"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/t9_key_clear"
+                style="@style/keyboard_button"
+                android:text="@string/btn_clear"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_0"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_zero"
+                android:textColor="#3889F2"/>
+
+            <TextView
+                android:id="@+id/t9_key_backspace"
+                style="@style/keyboard_button"
+                android:text="@string/btn_backspace"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#3889F2"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

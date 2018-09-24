@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MyFinalProjectSSC_Ver1</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_main_activity">CNS APP</string>
+    <string name="purchase">Purchase</string>
+    <string name="store">Store</string>
+    <string name="topup">Top Up</string>
+
+    <string name="client_id_title">client id</string>
+    <string name="client_id">49eea19a-9ad6-4a9e-b6e0-93ac2fc649a6</string>
+    <string name="client_secret_title">client secret</string>
+    <string name="client_secret">90800E5B907FA112A6D172C1E266858C1FEA9A49</string>
+    <string name="divinp_title">Div input</string>
+    <string name="DIVINP">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</string>
+    <string name="idchinhanh_title">id chi nhanh</string>
+    <string name="idChinhanh">157264</string>
+    <string name="idsold_title">id nguoi ban</string>
+    <string name="idsold">388854</string>
+
+    <string name="terminalId">30100000</string>
+    <string name="merchantId">111111111111111</string>
+
+
+
+
+    <!--keyboard-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+
+    <!--search view-->
+    <string name="action_search">Search</string>
+    <string name="search_hint">Tên sản phẩm…</string>
+
+</resources>

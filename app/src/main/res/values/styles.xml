@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#FFF</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabSelectedTextColor">#FFF</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Custom1" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Vui lòng đợi trong giây lát</item>
+        <item name="DialogSpotColor">@android:color/holo_blue_light</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="Custom2" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Hệ thống đang xử lý</item>
+        <item name="DialogSpotColor">@android:color/holo_blue_light</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <!--<style name="Theme.MyFancyTheme" parent="android:Theme.Holo">-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/back_icon</item>-->
+    <!--</style>-->
+
+    <!--keyboard-->
+    <style name="keyboard_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@drawable/keyboard_divider</item>
+        <item name="android:gravity">center</item>
+        <item name="android:showDividers">beginning|middle|end</item>
+    </style>
+
+    <style name="keyboard_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+        <!--<item name="android:background">@drawable/button</item>-->
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="keyboard_number_button" parent="keyboard_button">
+        <item name="android:tag">number_button</item>
+    </style>
+    <!--end keyboard-->
+
+    <style name="WhiteCheck">
+        <item name="colorAccent">#F06292</item>
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view_invoices="http://schemas.android.com/apk/res-auto"
+    xmlns:linealayout_item_store="http://schemas.android.com/tools"
+    android:id="@+id/card_view_store"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    card_view_invoices:cardCornerRadius="@dimen/card_album_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        linealayout_item_store:cardCornerRadius="@dimen/card_album_radius"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:id="@+id/store_id_invoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding"
+            android:paddingTop="@dimen/album_title_padding"
+            android:textColor="@color/album_title"
+            android:textSize="13sp"
+            android:text="1234545"
+            android:textStyle="italic"
+            />
+
+        <LinearLayout
+            android:id="@+id/linealayout_item_store"
+            android:layout_width="match_parent"
+            android:layout_below="@id/store_id_invoices"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            linealayout_item_store:cardCornerRadius="@dimen/card_album_radius">
+
+            <TextView
+                android:id="@+id/store_food_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/songs_count_padding_bottom"
+                android:paddingStart="@dimen/album_title_padding"
+                android:paddingEnd="4dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/store_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:checkMark="@drawable/uncheck"
+                android:theme="@style/WhiteCheck"
+                linealayout_item_store:ignore="UnusedAttribute"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/store_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linealayout_item_store"
+            android:paddingBottom="@dimen/songs_count_padding_bottom"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="4dp"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            linealayout_item_store:ignore="SmallSp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

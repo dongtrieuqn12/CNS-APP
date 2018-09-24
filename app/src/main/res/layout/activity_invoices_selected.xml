@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c2c2c2"
+    tools:context=".Activities.InvoicesSelectedActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_invoices_selected"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách lẻ"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:paddingRight="8dp"
+            android:id="@+id/information"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_invoices_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:background="#FFFFFF"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền hàng"
+            android:layout_gravity="center"
+            android:textColor="#606060"
+            android:textStyle="normal"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/total_invoices"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:background="#FFFFFF"
+        android:paddingRight="16dp"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giảm giá hóa đơn"
+            android:layout_gravity="center"
+            android:textColor="#606060"
+            android:textStyle="normal"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người tạo: "
+            android:layout_gravity="center"
+            android:textColor="#606060"
+            android:textStyle="normal"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Hồ Đông Triều"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</LinearLayout>

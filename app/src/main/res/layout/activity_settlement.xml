@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".Activities.SettlementActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settlement"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/settlement_total_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng số 10 giao dịch"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:gravity="right">
+        <TextView
+            android:text="Tổng:"
+            android:textSize="18sp"
+            android:layout_marginRight="8dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/total_settlment_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/settlement_action"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:text="kết toán giao dịch"
+        android:background="@drawable/button_blue"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
